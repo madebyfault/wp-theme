@@ -30,6 +30,11 @@
             <img src="<?php bloginfo('template_url'); ?>/images/404dummy.png" data-original="<?php the_field("custumPhoto04", $post->ID); ?>" alt="<?php the_title_attribute(); ?>">
 <?php else : ?>
 <?php endif; ?>
+
+<?php if ( get_field('custumPhoto05') ) : ?>
+            <img src="<?php bloginfo('template_url'); ?>/images/404dummy.png" data-original="<?php the_field("custumPhoto05", $post->ID); ?>" alt="<?php the_title_attribute(); ?>">
+<?php else : ?>
+<?php endif; ?>
             <ul class="postInfo">
                 <li class="postDate">Posted at <time datetime="<?php the_time( 'Y-m-d G:i' ); ?>"><?php the_time( get_option('date_format') ); ?></time></li>
                 <li class="postTag"><?php the_tags('Tag : ',' , '); ?></li>
