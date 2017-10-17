@@ -73,8 +73,8 @@ $(function(){
 //外部リンク別ウィンドウ遷移
 $(function(){
 	$("a[href^='http://']").attr("target","_blank");
-	$("a[href^='http://www.madebyfault.net']").attr("target","_self");
 	$("a[href^='https://']").attr("target","_blank");
+	$("a[href^='https://www.madebyfault.net']").attr("target","_self");
 });
 
 //SNSアイコン差し替え
